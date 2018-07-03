@@ -35,7 +35,7 @@ public class DadicationsAdapter extends RecyclerView.Adapter<DadicationsAdapter.
     }
 
 
-    public DadicationsAdapter(List<CurrentDedicationsResult> RequestLIst, Activity context) {
+    public DadicationsAdapter(List<CurrentDedicationsResult> RequestLIst, Context context) {
         this.RequestDetails = RequestLIst;
         this.mContext = context;
     }

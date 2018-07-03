@@ -9,11 +9,20 @@ import java.io.Serializable;
 public class SongsDetails  implements Serializable{
     String Title;
     String S_id;
+    String QID="";
     String A_id;
     String Duration;
     String AlbumName;
     String Singer;
     String Playstatus;
+
+    public String getQID() {
+        return QID;
+    }
+
+    public void setQID(String QID) {
+        this.QID = QID;
+    }
 
     public String getPlaystatus() {
         return Playstatus;

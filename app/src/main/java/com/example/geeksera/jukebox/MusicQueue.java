@@ -125,7 +125,6 @@ public class MusicQueue extends Fragment {
                                 SongsDetails songsDetails = new SongsDetails();
                                 songsDetails = gson.fromJson(json, SongsDetails.class);
                                 SongDetailsLIst.add(songsDetails);
-
                             }
 
 
