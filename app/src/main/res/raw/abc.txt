@@ -1,18 +1,3 @@
 
+//jis krna hai kar jdli aur webservice phr msla kar rehe hai
 
-
-
-///sahe ha jaha pa name da raha ha wha pa password bhe mangy ha our
-///jis song pa jiss user na request ki hogii whoiii que ko jump kar payee ga
-
-
-sahe ha jaldii confrm kar?
-
-
-
-// masat aisy kar jab hum name enter kerty hain isy get token krty hain aur token use krty hain to her queue ky sth name aa jay
-
-
-
-///lakin masat multiple user bhe tou request karty hain tou sub ki list ja jaye?
-jaldi bata
