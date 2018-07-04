@@ -4,3 +4,4 @@
 
 
 ///ab run kar
+//our dosra devices wala kar raha hon koi device mag k
