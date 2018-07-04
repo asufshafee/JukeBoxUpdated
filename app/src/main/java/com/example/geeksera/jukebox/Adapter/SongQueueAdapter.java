@@ -106,6 +106,7 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
         holder.Albem.setText(mSongDetail.getAlbumName());
         holder.Duration.setText(mSongDetail.getDuration());
         holder.Cost.setText("Cost: " + mSongDetail.getPeriority());
+        holder.Cost.setVisibility(View.VISIBLE);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
