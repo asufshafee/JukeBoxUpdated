@@ -1,5 +1,8 @@
 //masat tokens limit rhk dy 5 ly sky bas pher dosra prority kyle dy dky bas
 
 
+
+///kar deya limit wala check kar
+
 //baki jo kam ho raha ha means jo device requst song kartii ha who dekh saktii ha jump ka button
 ya sahe ha ya nahe

@@ -105,6 +105,13 @@ public class Dedicate_Song extends AppCompatActivity {
                     Type = "Private";
                 }
 
+
+                if (Integer.parseInt(NoOFTokens.getText().toString()) > 5) {
+                    Toast.makeText(getApplicationContext(), "Token Limit exceed Max 5", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+
                 SendRequestToServer();
 
 

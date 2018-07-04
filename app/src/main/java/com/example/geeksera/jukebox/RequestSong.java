@@ -85,6 +85,11 @@ public class RequestSong extends AppCompatActivity {
                     return;
                 }
 
+                if (Integer.parseInt(NoOfTokens.getText().toString()) > 5) {
+                    Toast.makeText(getApplicationContext(), "Token Limit exceed Max 5", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
 
                 SendRequestToServer();
 
