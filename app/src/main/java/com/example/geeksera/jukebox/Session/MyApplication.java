@@ -24,6 +24,7 @@ import com.google.gson.reflect.TypeToken;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -40,7 +41,7 @@ public class MyApplication extends Application {
     String Theme;
     GetRestaurantsResult getRestaurantsResult;
     String Name;
-    List<String> IDs = new LinkedList<>();
+    List<String> IDs = new ArrayList<>();
     String[] IDs1;
     SharedPreferences.Editor editor;
     SharedPreferences prefs;
@@ -52,7 +53,7 @@ public class MyApplication extends Application {
     }
 
     public void setJson(String json) {
-        editor.putString("name", "json");
+        editor.putString("name", json);
         editor.apply();
         editor.commit();
     }

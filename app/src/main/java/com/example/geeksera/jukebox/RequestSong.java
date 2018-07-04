@@ -145,7 +145,7 @@ public class RequestSong extends AppCompatActivity {
                             final TextView Message = (TextView) dialog.findViewById(R.id.Message);
                             Message.setText(jsonObject.getString("RequestSongResult"));
                             MyApplication myApplication = (MyApplication) getApplicationContext();
-                            myApplication.AddIds(songsDetails.getA_id());
+                            myApplication.AddIds(songsDetails.getS_id());
                             Button Dedicate;
                             Dedicate = (Button) dialog.findViewById(R.id.OK);
                             Dedicate.setOnClickListener(new View.OnClickListener() {
