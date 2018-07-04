@@ -28,7 +28,7 @@ public class SongLibraryAdapter extends RecyclerView.Adapter<SongLibraryAdapter.
     Context mContext;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView SongName, Singer, Albem, Duration, theme;
+        public TextView SongName, Singer, Albem, Duration;
 
         LinearLayout Click;
 
@@ -38,7 +38,6 @@ public class SongLibraryAdapter extends RecyclerView.Adapter<SongLibraryAdapter.
             Singer = (TextView) view.findViewById(R.id.Singer);
             Albem = (TextView) view.findViewById(R.id.Albem);
             Duration = (TextView) view.findViewById(R.id.Duration);
-            theme = (TextView) view.findViewById(R.id.Theme);
             Click = (LinearLayout) view.findViewById(R.id.Click);
         }
     }
@@ -65,7 +64,6 @@ public class SongLibraryAdapter extends RecyclerView.Adapter<SongLibraryAdapter.
         holder.Singer.setText(mSongDetail.getSinger());
         holder.Albem.setText(mSongDetail.getAlbumName());
         holder.Duration.setText(mSongDetail.getDuration());
-        holder.theme.setText(mSongDetail.getPlaystatus());
         holder.Click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

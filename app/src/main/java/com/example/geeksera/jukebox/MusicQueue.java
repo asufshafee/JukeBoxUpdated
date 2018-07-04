@@ -131,7 +131,7 @@ public class MusicQueue extends Fragment {
                             Collections.sort(SongDetailsLIst, new Comparator<SongsDetails>() {
                                 @Override
                                 public int compare(SongsDetails o1, SongsDetails o2) {
-                                    return Double.compare(Double.parseDouble(o1.getPeriority()), Double.parseDouble(o2.getPeriority()));
+                                    return Double.compare(Double.parseDouble(o2.getPeriority()), Double.parseDouble(o1.getPeriority()));
                                 }
                             });
                             mAdapter.notifyDataSetChanged();

@@ -5,6 +5,7 @@
     android:background="@drawable/trans_white_rectangle"
     android:gravity="center"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context="com.example.geeksera.jukebox.RequestSong">
 
 

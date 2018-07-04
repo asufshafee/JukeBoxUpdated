@@ -110,6 +110,7 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
                 Datications(position);
             }
         });
+        holder.Jump.setVisibility(View.VISIBLE);
         holder.Jump.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +120,7 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
                 // inflate the layout
                 dialog.setContentView(R.layout.dialog_jump);
                 // Set the dialog text -- this is better done in the XML
-                EditText Tokens = dialog.findViewById(R.id.Jump);
+                final EditText Tokens = dialog.findViewById(R.id.NoOFTokens);
 
                 Button GetToken;
 
@@ -127,7 +128,13 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
                 GetToken.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        mContext.startActivity(new Intent(mContext, Get_Token.class));
+
+                        String Type = "1";
+
+                        MyApplication myApplication = (MyApplication) mContext.getApplicationContext();
+                        String Funcation = "RequestSong/" + myApplication.getDeviceID() + "/" + Tokens.getText().toString() + "/" + SongDetails.get(position).getS_id() + "/" + myApplication.getGetRestaurantsResult().getId() + "/" + Type;
+
+                        SendRequest(Funcation);
                         dialog.hide();
 
                     }
@@ -267,12 +274,16 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
                             Dedicate.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
+                                    swipeRefreshLayout.setRefreshing(true);
+
+                                    SendRequestToServer();
+
+
                                     dialog.hide();
 
                                 }
                             });
                             dialog.show();
-                            SendRequestToServer();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -330,10 +341,10 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
                             Collections.sort(SongDetails, new Comparator<SongsDetails>() {
                                 @Override
                                 public int compare(SongsDetails o1, SongsDetails o2) {
-                                    return Double.compare(Double.parseDouble(o1.getPeriority()), Double.parseDouble(o2.getPeriority()));
+                                    return Double.compare(Double.parseDouble(o2.getPeriority()), Double.parseDouble(o1.getPeriority()));
                                 }
                             });
-                            mAdapter.notifyDataSetChanged();
+                            notifyDataSetChanged();
                             swipeRefreshLayout.setRefreshing(false);
 
                         } catch (JSONException e) {
