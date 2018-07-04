@@ -63,14 +63,13 @@
                 android:textColor="@color/blue"
                 android:textSize="20dp" />
 
-            <TextView
-                android:gravity="right"
-                android:id="@+id/Theme"
-                android:visibility="invisible"
+            <Button
+                android:id="@+id/Jump"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Theme"
+                android:gravity="center"
+                android:text="Jump"
                 android:textColor="@color/blue"
                 android:textSize="20dp" />
         </LinearLayout>

@@ -72,7 +72,7 @@ public class MusicQueue extends Fragment {
         SongName = view.findViewById(R.id.NowPlaying);
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeLayoutQueue);
-        mAdapter = new SongQueueAdapter(SongDetailsLIst, getActivity());
+        mAdapter = new SongQueueAdapter(SongDetailsLIst, getActivity(),swipeRefreshLayout);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -165,7 +165,7 @@ public class MusicQueue extends Fragment {
         }
 
         recyclerView = (RecyclerView) MainView.findViewById(R.id.recycler_view);
-        mAdapter = new SongQueueAdapter(Search, getActivity());
+        mAdapter = new SongQueueAdapter(Search, getActivity(),swipeRefreshLayout);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -179,7 +179,7 @@ public class MusicQueue extends Fragment {
     public void Default() {
         recyclerView = (RecyclerView) MainView.findViewById(R.id.recycler_view);
 
-        mAdapter = new SongQueueAdapter(SongDetailsLIst, getActivity());
+        mAdapter = new SongQueueAdapter(SongDetailsLIst, getActivity(),swipeRefreshLayout);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
