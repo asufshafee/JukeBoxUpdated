@@ -1,8 +1,6 @@
 
 
-//masat
-user login password dy
-her queue py difference user baki sara theak hai ya login page bana matlb deffrince person add hn apny song select kary
 
 
 
+// masat aisy kar jab hum name enter kerty hain isy get token krty hain aur token use krty hain to her queue ky sth name aa jay
