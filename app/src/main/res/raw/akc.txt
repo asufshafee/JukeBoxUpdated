@@ -1,0 +1,3 @@
+//wo khty hain user login ho apny mobie sy
+//main ny sir ikram ko kha k device id py sub ho rha hai ...
+//khta hai dosri device use kro but dosri py chal nhi rha hai
