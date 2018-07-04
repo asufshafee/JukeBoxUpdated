@@ -1,3 +1,2 @@
-
-//jis krna hai kar jdli aur webservice phr msla kar rehe hai
-
+Sahe ha ab check kar jo user
+requst kary ga ussi ko hi jump ka button show hoga
