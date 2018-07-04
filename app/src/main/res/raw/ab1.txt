@@ -1,14 +1,9 @@
 
 
 
-Ab Ip Change kar Ka chala WebService Theek ha Ap Chnage the Who Sahe kar di ha main na
 
-
-
-Task Done :)
-
-Masat Task Done Please Test Ip Change Kar Our Chala App Task Ho Gya ha Kuch our kam ha tou Bata
-Our Dekh Task sahe hova Para
+//masat tokens  enter na kary sirf show ho k kitna token lgy hain dosra Banda dehk sky usy zyda tokens lagy aur sprority high ho jay....
+jis trha dediction show ho reha thi her thi .wo drhk ky banda usy zyda tokens lagy....
 
 
 
