@@ -5,3 +5,5 @@ requst kary ga ussi ko hi jump ka button show hoga
 
 //jaldi bata ya sahe ha ya password ka opition dallon??
 ya multiple devices ka liye ha
+
+purani app uninstall karna iss ko karty waqat ip chnage karna lazmi
