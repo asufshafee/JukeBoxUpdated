@@ -1,2 +1,7 @@
 Sahe ha ab check kar jo user
 requst kary ga ussi ko hi jump ka button show hoga
+
+
+
+//jaldi bata ya sahe ha ya password ka opition dallon??
+ya multiple devices ka liye ha
