@@ -6,6 +6,12 @@ humain jo smjh aya ha who ya ha
  queue pa click karain our who list show kary kah kiss kiss bandy na kitny token lagaye hain iss
  song main jasy hum pahly dedication show karwa rahy hain
  ...
+ //tokens bty agr asif ky tokns lgy hain 2 main lgta hn 5 wo jump kry oper aa jay prority high ho jay
+
+
+
+
+
  bata ya sahe ha ya humain kuch change ha
  full explain kar darna nahe ha
 
