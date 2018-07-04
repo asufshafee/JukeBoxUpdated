@@ -1,1 +1,5 @@
-masat ya task hai jldi kar
+1-show queue with jump options on same screen
+2-when clicking the jump option/button token cast show
+for emple
+ikaram 2 tokns cast
+shaihd 10 tokens on then jump song on first
