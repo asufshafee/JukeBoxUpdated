@@ -3,6 +3,4 @@
 //khta hai dosri device use kro but dosri py chal nhi rha hai
 
 
-
-//hafiz ko dekhao jo error a raha ha dosrii device pa who mujhy bhjy ga
-//who bhe hum kar dety hain
+///ab run kar
