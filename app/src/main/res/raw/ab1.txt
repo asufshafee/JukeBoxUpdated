@@ -1,25 +1,8 @@
 
 
-//Masat interface ki image bhj kesa hoga interface our bata task ya ak hi ha
-
-humain jo smjh aya ha who ya ha
- queue pa click karain our who list show kary kah kiss kiss bandy na kitny token lagaye hain iss
- song main jasy hum pahly dedication show karwa rahy hain
- ...
- //tokens bty agr asif ky tokns lgy hain 2 main lgta hn 5 wo jump kry oper aa jay prority high ho jay
 
 
+Sahe ha Masat Main Update Karta 1 hour tak phir test karna
 
-
-
- bata ya sahe ha ya humain kuch change ha
- full explain kar darna nahe ha
-
-
-
-
-1-show queue with jump options on same screen
-2-when clicking the jump option/button token cast show
-for emple
-ikaram 2 tokns cast
-shaihd 10 tokens on then jump song on first
+note
+agr github ka opitions na ain forexample gum ho jain to vcs main ja ka 3 sra opition chose krna
