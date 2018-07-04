@@ -62,7 +62,7 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
     private DadicationsAdapter mAdapter;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView SongName, Singer, Albem, Duration;
+        public TextView SongName, Singer, Albem, Duration, Cost;
         Button Jump;
 
         LinearLayout Click;
@@ -75,6 +75,7 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
 
             Duration = (TextView) view.findViewById(R.id.Duration);
             Jump = (Button) view.findViewById(R.id.Jump);
+            Cost = view.findViewById(R.id.Cost);
 
             Click = (LinearLayout) view.findViewById(R.id.Click);
 
@@ -104,6 +105,7 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
         holder.Singer.setText(mSongDetail.getSinger());
         holder.Albem.setText(mSongDetail.getAlbumName());
         holder.Duration.setText(mSongDetail.getDuration());
+        holder.Cost.setText("Cost: " + mSongDetail.getPeriority());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
