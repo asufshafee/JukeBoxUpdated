@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:/Backup/JukeBox/Clone/JukeBoxUpdated/JukeBox.iml" filepath="D:/Backup/JukeBox/Clone/JukeBoxUpdated/JukeBox.iml" />
+      <module fileurl="file://D:\Backup\JukeBox\Clone\JukeBoxUpdated\JukeBox.iml" filepath="D:\Backup\JukeBox\Clone\JukeBoxUpdated\JukeBox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JukeBoxUpdated.iml" filepath="$PROJECT_DIR$/.idea/JukeBoxUpdated.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
