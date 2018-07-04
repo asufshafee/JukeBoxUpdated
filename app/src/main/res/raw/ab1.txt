@@ -2,7 +2,7 @@
 Masat Smjh a gaii ha hora our explain karo tou mazaaa a jayeee
 //Masat ya Jump kaya hota ha? Explain
 
-
+//matlb ky song oper aa jay queue main jis tarha desktop ky queue main ho rha hai
 
 1-show queue with jump options on same screen
 2-when clicking the jump option/button token cast show
