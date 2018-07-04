@@ -5,6 +5,6 @@ package com.example.geeksera.jukebox.StaticData;
  */
 
 public class Static {
-    public static String ServerAddress="http://192.168.10.16/Kami/Service1.svc/";
+    public static String ServerAddress="http://192.168.0.61/Kami/Service1.svc/";
 
 }
