@@ -63,7 +63,6 @@ public class Dedicate_Song extends AppCompatActivity {
         Platinum = findViewById(R.id.Platinum);
 
 
-
         Bundle bundle = getIntent().getBundleExtra("bundle");
         songsDetails = (SongsDetails) bundle.getSerializable("songsDetails");
 
@@ -135,7 +134,7 @@ public class Dedicate_Song extends AppCompatActivity {
 
         MyApplication myApplication = (MyApplication) getApplicationContext();
         String Funcation = "insertDedications/" + DedicatedBy.getText().toString() + "/" + DedicatedTo.getText().toString() + "/" + Type + "/" +
-                songsDetails.getS_id() + "/" + Message.getText().toString() + "/" + myApplication.getDeviceID()+"/"+NoOFTokens.getText().toString()+ "/" + myApplication.getGetRestaurantsResult().getId()+"/"+Type1;
+                songsDetails.getS_id() + "/" + Message.getText().toString() + "/" + myApplication.getDeviceID() + "/" + NoOFTokens.getText().toString() + "/" + myApplication.getGetRestaurantsResult().getId() + "/" + Type1;
         SendRequest(Funcation);
 
     }
@@ -152,7 +151,7 @@ public class Dedicate_Song extends AppCompatActivity {
 
 
         String url = Static.ServerAddress + Funcation;
-        url=url.replace(" ","%20");
+        url = url.replace(" ", "%20");
 
         StringRequest stringRequest = new StringRequest(com.android.volley.Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -170,14 +169,13 @@ public class Dedicate_Song extends AppCompatActivity {
                             // Set the dialog text -- this is better done in the XML
                             final TextView Message = (TextView) dialog.findViewById(R.id.Message);
                             Message.setText(jsonObject.getString("insertDedicationsResult"));
-
+                            MyApplication myApplication = (MyApplication) getApplicationContext();
+                            myApplication.AddIds(songsDetails.getA_id());
                             Button Dedicate;
                             Dedicate = (Button) dialog.findViewById(R.id.OK);
                             Dedicate.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-
-
                                     dialog.hide();
                                     finish();
 

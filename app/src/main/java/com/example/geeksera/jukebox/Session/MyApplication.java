@@ -3,6 +3,7 @@ package com.example.geeksera.jukebox.Session;
 import android.Manifest;
 import android.app.Application;
 import android.app.ProgressDialog;
+import android.content.SharedPreferences;
 import android.widget.Toast;
 
 import com.android.volley.Cache;
@@ -17,9 +18,16 @@ import com.example.geeksera.jukebox.Objects.GetRestaurantsResult;
 import com.example.geeksera.jukebox.Objects.Request;
 import com.example.geeksera.jukebox.Objects.SongsDetails;
 import com.example.geeksera.jukebox.StaticData.Static;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 
 public class MyApplication extends Application {
@@ -32,7 +40,24 @@ public class MyApplication extends Application {
     String Theme;
     GetRestaurantsResult getRestaurantsResult;
     String Name;
+    List<String> IDs = new LinkedList<>();
+    String[] IDs1;
+    SharedPreferences.Editor editor;
+    SharedPreferences prefs;
 
+    String Json = "";
+
+    public String getJson() {
+        return prefs.getString("name", "");
+    }
+
+    public void setJson(String json) {
+        editor.putString("name", "json");
+        editor.apply();
+        editor.commit();
+    }
+
+    Gson gson = new Gson();
 
     @Override
     public void onCreate() {
@@ -42,6 +67,17 @@ public class MyApplication extends Application {
         final com.android.volley.Network network = new BasicNetwork(new HurlStack());
         mRequestQueue = new RequestQueue(cache, network);
         mRequestQueue.start();
+        prefs = getSharedPreferences("Juke", MODE_PRIVATE);
+        editor = getSharedPreferences("Juke", MODE_PRIVATE).edit();
+
+        if (getJson().equals("")) {
+            IDs1 = new String[0];
+        } else {
+
+            IDs1 = gson.fromJson(getJson(), String[].class);
+        }
+
+        IDs.addAll(Arrays.asList(IDs1));
 
         super.onCreate();
     }
@@ -164,4 +200,20 @@ public class MyApplication extends Application {
         mRequestQueue.add(stringRequest);
     }
 
+
+    public void AddIds(String ID) {
+        IDs.add(ID);
+        IDs1 = new String[IDs.size()];
+        for (int i = 0; i < IDs.size(); i++)
+            IDs1[i] = IDs.get(i);
+        setJson(gson.toJson(IDs1));
+    }
+
+    public List<String> getIDs() {
+        return IDs;
+    }
+
+    public void setIDs(List<String> IDs) {
+        this.IDs = IDs;
+    }
 }

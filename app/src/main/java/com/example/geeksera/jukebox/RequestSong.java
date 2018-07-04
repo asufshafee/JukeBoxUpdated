@@ -144,7 +144,8 @@ public class RequestSong extends AppCompatActivity {
                             // Set the dialog text -- this is better done in the XML
                             final TextView Message = (TextView) dialog.findViewById(R.id.Message);
                             Message.setText(jsonObject.getString("RequestSongResult"));
-
+                            MyApplication myApplication = (MyApplication) getApplicationContext();
+                            myApplication.AddIds(songsDetails.getA_id());
                             Button Dedicate;
                             Dedicate = (Button) dialog.findViewById(R.id.OK);
                             Dedicate.setOnClickListener(new View.OnClickListener() {
@@ -157,7 +158,12 @@ public class RequestSong extends AppCompatActivity {
 
                                 }
                             });
-                            dialog.show();
+                            try {
+                                dialog.show();
+
+                            } catch (Exception Ex) {
+
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

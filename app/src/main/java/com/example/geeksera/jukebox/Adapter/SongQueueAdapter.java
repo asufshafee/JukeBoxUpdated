@@ -60,6 +60,7 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
 
     private RecyclerView recyclerView;
     private DadicationsAdapter mAdapter;
+    MyApplication myApplication;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView SongName, Singer, Albem, Duration, Cost;
@@ -87,6 +88,14 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
         this.SongDetails = SongLIst;
         this.mContext = context;
         this.swipeRefreshLayout = swipeRefreshLayout1;
+        try {
+            myApplication = (MyApplication) context.getApplicationContext();
+
+        } catch (Exception Ex) {
+
+        }
+
+
     }
 
     @Override
@@ -113,7 +122,16 @@ public class SongQueueAdapter extends RecyclerView.Adapter<SongQueueAdapter.MyVi
                 Datications(position);
             }
         });
-        holder.Jump.setVisibility(View.VISIBLE);
+
+
+        List<String> IDs = myApplication.getIDs();
+
+        for (String s : IDs) {
+            if (s.equals(mSongDetail.getS_id())) {
+                holder.Jump.setVisibility(View.VISIBLE);
+            }
+        }
+
         holder.Jump.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
