@@ -1,8 +1,7 @@
 
 
 
-//masat  data nhi aa rha hai webservice
-//masat data nhi show ho rha hai webservice sy webservice send kar ya
+Ab Ip Change kar Ka chala WebService Theek ha Ap Chnage the Who Sahe kar di ha main na
 
 
 
@@ -19,4 +18,4 @@ Our Dekh Task sahe hova Para
 
 
 note
-agr github ka opitions na ain forexample gum ho jain to vcs main ja ka 3 sra opition chose krna
+agr github ka opitions na ain forexample gum ho jain to vcs main ja ka 2 sra opition chose krna
