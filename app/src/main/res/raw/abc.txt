@@ -11,3 +11,8 @@ sahe ha jaldii confrm kar?
 
 
 // masat aisy kar jab hum name enter kerty hain isy get token krty hain aur token use krty hain to her queue ky sth name aa jay
+
+
+
+///lakin masat multiple user bhe tou request karty hain tou sub ki list ja jaye?
+jaldi bata

@@ -203,10 +203,7 @@ public class MyApplication extends Application {
 
     public void AddIds(String ID) {
         IDs.add(ID);
-        IDs1 = new String[IDs.size()];
-        for (int i = 0; i < IDs.size(); i++)
-            IDs1[i] = IDs.get(i);
-        setJson(gson.toJson(IDs1));
+        setJson(gson.toJson(IDs));
     }
 
     public List<String> getIDs() {
