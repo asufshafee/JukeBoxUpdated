@@ -1,4 +1,4 @@
-Sahe ha ab check kar jo user
+Sahe ha ab check kar jo device
 requst kary ga ussi ko hi jump ka button show hoga
 
 
